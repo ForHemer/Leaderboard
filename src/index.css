@@ -1,0 +1,102 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  header {
+    width: 100%;
+    margin-left: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 10vh;
+  }
+  
+  .heading {
+    font-size: 2.5rem;
+  }
+  
+  main {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+  }
+  
+  .space {
+    width: 40%;
+  }
+  
+  .displayScore {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding-left: 2rem;
+  }
+  
+  .displayScore #div_1 {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .displayScore h2,
+  .displayScore button {
+    width: max-content;
+  }
+  
+  .refresh_btn,
+  .btn-submit {
+    box-shadow: 3px 4px 0 0 #050505;
+    background-color: #fff;
+    border: 4px solid #000;
+    display: inline-block;
+    cursor: pointer;
+    color: #0a0a0a;
+    font-weight: bold;
+    padding: 0.5rem 0.8rem;
+    text-decoration: none;
+  }
+  
+  .table_item {
+    width: 100%;
+    border: 3px solid black;
+    border-collapse: collapse;
+  }
+  
+  .table_item tr:nth-child(even) {
+    background-color: #c2c2c2;
+  }
+  
+  .table_item tr td {
+    font-size: 1.2rem;
+    padding: 0.5rem 0.8rem;
+  }
+  
+  .inputScore {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  
+  .inputScore h2,
+  .inputScore input,
+  .inputScore p {
+    width: 50%;
+  }
+  
+  .inputScore input {
+    font-size: 1.2rem;
+    padding: 0.5rem 0.8rem;
+    border: 2px solid #000;
+    color: #000;
+  }
+  
+  .inputScore p {
+    text-align: right;
+  }
+  

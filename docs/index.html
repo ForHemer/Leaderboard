@@ -1,68 +1,40 @@
-<head><script defer src="index.js"></script></head>Html Webpack Plugin:
-<pre>
-  Error: Child compilation failed:
-  Module not found: Error: Can't resolve '/home/hemerson/MICROVERSE_  FULLTIME_STUDENT/Leaderboard/src/index.html' in '/home/hemerson/MI  CROVERSE_FULLTIME_STUDENT/Leaderboard'
-  ModuleNotFoundError: Module not found: Error: Can't resolve '/home  /hemerson/MICROVERSE_FULLTIME_STUDENT/Leaderboard/src/index.html'   in '/home/hemerson/MICROVERSE_FULLTIME_STUDENT/Leaderboard'
-      at /home/hemerson/MICROVERSE_FULLTIME_STUDENT/Leaderboard/node  _modules/webpack/lib/Compilation.js:2014:28
-      at /home/hemerson/MICROVERSE_FULLTIME_STUDENT/Leaderboard/node  _modules/webpack/lib/NormalModuleFactory.js:791:13
-      at eval (eval at create (/home/hemerson/MICROVERSE_FULLTIME_ST  UDENT/Leaderboard/node_modules/tapable/lib/HookCodeFactory.js:33:1  0), <anonymous>:10:1)
-      at /home/hemerson/MICROVERSE_FULLTIME_STUDENT/Leaderboard/node  _modules/webpack/lib/NormalModuleFactory.js:265:22
-      at eval (eval at create (/home/hemerson/MICROVERSE_FULLTIME_ST  UDENT/Leaderboard/node_modules/tapable/lib/HookCodeFactory.js:33:1  0), <anonymous>:9:1)
-      at /home/hemerson/MICROVERSE_FULLTIME_STUDENT/Leaderboard/node  _modules/webpack/lib/NormalModuleFactory.js:427:22
-      at /home/hemerson/MICROVERSE_FULLTIME_STUDENT/Leaderboard/node  _modules/webpack/lib/NormalModuleFactory.js:115:11
-      at /home/hemerson/MICROVERSE_FULLTIME_STUDENT/Leaderboard/node  _modules/webpack/lib/NormalModuleFactory.js:663:25
-      at /home/hemerson/MICROVERSE_FULLTIME_STUDENT/Leaderboard/node  _modules/webpack/lib/NormalModuleFactory.js:848:8
-      at /home/hemerson/MICROVERSE_FULLTIME_STUDENT/Leaderboard/node  _modules/webpack/lib/NormalModuleFactory.js:968:5
-  
-  - Compilation.js:2014 
-    [Leaderboard]/[webpack]/lib/Compilation.js:2014:28
-  
-  - NormalModuleFactory.js:791 
-    [Leaderboard]/[webpack]/lib/NormalModuleFactory.js:791:13
-  
-  
-  - NormalModuleFactory.js:265 
-    [Leaderboard]/[webpack]/lib/NormalModuleFactory.js:265:22
-  
-  
-  - NormalModuleFactory.js:427 
-    [Leaderboard]/[webpack]/lib/NormalModuleFactory.js:427:22
-  
-  - NormalModuleFactory.js:115 
-    [Leaderboard]/[webpack]/lib/NormalModuleFactory.js:115:11
-  
-  - NormalModuleFactory.js:663 
-    [Leaderboard]/[webpack]/lib/NormalModuleFactory.js:663:25
-  
-  - NormalModuleFactory.js:848 
-    [Leaderboard]/[webpack]/lib/NormalModuleFactory.js:848:8
-  
-  - NormalModuleFactory.js:968 
-    [Leaderboard]/[webpack]/lib/NormalModuleFactory.js:968:5
-  
-  - child-compiler.js:169 
-    [Leaderboard]/[html-webpack-plugin]/lib/child-compiler.js:169:18  
-  - Compiler.js:564 
-    [Leaderboard]/[webpack]/lib/Compiler.js:564:11
-  
-  - Compiler.js:1183 
-    [Leaderboard]/[webpack]/lib/Compiler.js:1183:17
-  
-  
-  - Hook.js:18 Hook.CALL_ASYNC_DELEGATE [as _callAsync]
-    [Leaderboard]/[tapable]/lib/Hook.js:18:14
-  
-  - Compiler.js:1179 
-    [Leaderboard]/[webpack]/lib/Compiler.js:1179:33
-  
-  - Compilation.js:2785 finalCallback
-    [Leaderboard]/[webpack]/lib/Compilation.js:2785:11
-  
-  - Compilation.js:3090 
-    [Leaderboard]/[webpack]/lib/Compilation.js:3090:11
-  
-  
-  - Hook.js:18 Hook.CALL_ASYNC_DELEGATE [as _callAsync]
-    [Leaderboard]/[tapable]/lib/Hook.js:18:14
-  
-</pre>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Leaderboard</title>
+  <link rel="stylesheet" href="index.css">
+<script defer src="index.js"></script></head>
+
+<body>
+  <header>
+    <h1 class="heading">Leaderboard</h1>
+  </header>
+
+  <main>
+
+    <section class="space displayScore">
+      <div id="div_1">
+        <h2>Recent Score</h2>
+        <button type="button" class="refresh_btn">Refresh</button>
+      </div>
+      <div id="div_2">
+        <table class="table_item"></table>
+      </div>
+    </section>
+
+    <section class="space inputScore">
+      <h2>Add your score</h2>
+      <input type="text" name="name" placeholder="Your name" class="score_input" id="leaderName">
+      <input type="text" name="score" placeholder="Your score" class="score_input" id="leaderScore">
+      <p><button type="submit" value="Submit" class="btn-submit">Submit</button></p>
+    </section>
+
+  </main>
+
+</body>
+
+</html>
