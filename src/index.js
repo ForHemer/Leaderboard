@@ -1,12 +1,19 @@
 import './index.css';
-import addLeader from './modules/addLeader.js';
-import displayLeader from './modules/displayLeader.js';
+import { postData, getData } from './modules/addLeader.js';
 
-window.addEventListener('DOMContentLoaded', displayLeader);
+const url = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/2IsnnKTJEp8zyy2uRlee/scores';
 
 document.querySelector('.btn-submit').addEventListener('click', (e) => {
   e.preventDefault();
-  addLeader();
+  const leaderName = document.querySelector('#leaderName').value;
+  const leaderScore = document.querySelector('#leaderScore').value;
+
+  const objLeader = {
+    user: leaderName,
+    score: leaderScore,
+  };
+
+  postData(url, objLeader);
 
   document.querySelector('#leaderName').value = '';
   document.querySelector('#leaderScore').value = '';
@@ -14,5 +21,5 @@ document.querySelector('.btn-submit').addEventListener('click', (e) => {
 
 document.querySelector('.refresh_btn').addEventListener('click', (e) => {
   e.preventDefault();
-  displayLeader();
+  getData(url);
 });
