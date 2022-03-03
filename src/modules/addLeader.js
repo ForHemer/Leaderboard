@@ -7,11 +7,11 @@ const addLeader = () => {
     } else {
       leaders = JSON.parse(localStorage.getItem('leaders'));
     }
-    const bookObj = {
+    const leaderObj = {
       name: leaderName,
       score: leaderScore,
     };
-    leaders.push(bookObj);
+    leaders.push(leaderObj);
   
     localStorage.setItem('leaders', JSON.stringify(leaders));
   };
