@@ -1,7 +1,6 @@
-import _ from 'lodash';
 import './index.css';
-import addLeader from './modules/addLeader';
-import displayLeader from './modules/displayLeader';
+import addLeader from './modules/addLeader.js';
+import displayLeader from './modules/displayLeader.js';
 
 window.addEventListener('DOMContentLoaded', displayLeader);
 
