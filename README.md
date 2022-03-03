@@ -10,7 +10,17 @@ The leaderboard website displays scores submitted by different players. It also 
 ## Built With
 
 - HTML, CSS, JavaScript
-- Technologies used: GitHub, VScode, nodejs, webpack, GIT,.
+- Technologies used: GitHub, VScode, nodejs, webpack, GIT.
+
+
+
+## How it works
+
+The Leaderboard web application allows the user to enter the name and the score of a leader.
+* By clicking on the submit button the information regarding the leader is stored in memory;
+* By clicking on the refresh button the list of leader in memory and their score are displayed on the screen;
+
+
 
 ## Live Demo
 
