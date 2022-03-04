@@ -5,7 +5,8 @@ The leaderboard website displays scores submitted by different players. It also 
 
 ## Screenshot
 
-![Screenshot from 2022-03-03 12-51-45](https://user-images.githubusercontent.com/88809610/156625470-764e450e-3f57-4080-9a73-bf807da0be9e.png)
+
+![Screenshot from 2022-03-04 13-25-10](https://user-images.githubusercontent.com/88809610/156822543-61382741-c4da-4bee-963c-0dee39f2ba68.png)
 
 ## Built With
 
