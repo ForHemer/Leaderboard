@@ -1,8 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700&display=swap');
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
   font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background: linear-gradient(80deg, rgb(9, 27, 133), white, #a4031fff, #fde74cff, #1cff3a);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  overflow-x: hidden;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
 }
 
 header {
@@ -16,6 +35,14 @@ header {
 
 .heading {
   font-size: 2.5rem;
+  transition: color 3s;
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 50px;
+}
+
+.heading:hover {
+  color: #fde74cff;
 }
 
 main {
@@ -33,6 +60,7 @@ main {
   flex-direction: column;
   gap: 1.5rem;
   padding-left: 2rem;
+  margin-top: 70px;
 }
 
 .displayScore #div_1 {
@@ -58,6 +86,14 @@ main {
   font-weight: bold;
   padding: 0.5rem 0.8rem;
   text-decoration: none;
+  outline: 0;
+  transition: 0.3s linear;
+}
+
+.refresh_btn:active,
+.btn-submit:active {
+  transform: scale(0.85);
+  box-shadow: 3px 2px 25px 1px rgba(0, 0, 0, 0.25);
 }
 
 .table_item {
@@ -73,6 +109,13 @@ main {
 .table_item tr td {
   font-size: 1.2rem;
   padding: 0.5rem 0.8rem;
+  font-family: 'Orbitron', sans-serif;
+  font-weight: bold;
+}
+
+.table_item tr:hover {
+  background-color: #000;
+  color: #fff;
 }
 
 .inputScore {
@@ -81,6 +124,7 @@ main {
   gap: 2rem;
   padding-left: 2rem;
   padding-right: 2rem;
+  margin-top: 70px;
 }
 
 .inputScore h2,
